@@ -4,7 +4,9 @@ const mainController = {
     index: (request, response) => {
         response.sendFile(path.join(dirname, "src/views/home.html"));
     },
-    about: () => { }
+    about: (request, response) => {
+        response.sendFile(path.join(dirname, "src/views/about.html"));
+    }
 };
 
 module.exports = mainController;
